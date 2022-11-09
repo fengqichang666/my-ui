@@ -1,11 +1,12 @@
 {
   "name": "my-element-fqc",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lib": "vue-cli-service build --target lib --name myui --dest lib packages/index.js",
+    "lint": "vue-cli-service --fixed lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -14,12 +15,8 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.5",
-    "@vue/cli-plugin-eslint": "^4.0.5",
     "@vue/cli-plugin-vuex": "^4.0.5",
     "@vue/cli-service": "^4.0.5",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
